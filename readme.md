@@ -4,7 +4,7 @@
 [project-github-path]: https://github.com/[project-name]
 [linux-workflow]: [project-github-path]/actions/workflows/linux.yml
 
-[![linux]([linux-workflow]/badge.svg)]([linux-workflow])&nbsp;
+[![linux](https://github.com/catranio/avconv//actions/workflows/linux.yml/badge.svg)](https://github.com/catranio/avconv//actions/workflows/linux.yml)&nbsp;
 
 ## Build
 

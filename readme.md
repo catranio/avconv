@@ -1,6 +1,6 @@
-# __project_name__
+# avconv
 
-[project-name]: catranio/cpp-template
+[project-name]: catranio/avconv
 [project-github-path]: https://github.com/[project-name]
 
 [![linux][project-github-path]]([linux-workflow]/badge.svg)&nbsp;
@@ -9,7 +9,7 @@
 ## Build
 
 ```console
-$ git clone https://github.com/__project_name__.git
+$ git clone https://github.com/avconv.git
 $ cd project && mkdir build && cd build
 $ cmake .. && make -j 4
 ```
@@ -24,5 +24,6 @@ $ cmake .. && make -j 4
 Documentation can be found in the [wiki]([project-github-path]/wiki) pages.
 
 ---
-Author: *Petr Iaskevich, MIT license*\
-Email: *iaskdeveloper@gmail.com*
+Authors: *Petr Iaskevich*, *Meterellema*\
+Email: *iaskdeveloper@gmail.com*\
+License: *MIT license*

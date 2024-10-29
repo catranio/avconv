@@ -2,9 +2,9 @@
 
 [project-name]: catranio/avconv
 [project-github-path]: https://github.com/[project-name]
-
-[![linux][project-github-path]]([linux-workflow]/badge.svg)&nbsp;
 [linux-workflow]: [project-github-path]/actions/workflows/linux.yml
+
+[![linux]([project-github-path])]([linux-workflow]/badge.svg)&nbsp;
 
 ## Build
 

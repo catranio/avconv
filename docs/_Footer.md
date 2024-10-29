@@ -1,2 +1,5 @@
-Author: *Petr Iaskevich, MIT license*\
-Email: *iaskdeveloper@gmail.com*
+Authors: \
+*Petr Iaskevich*\
+*Meterellema*
+
+Emails: *iaskdeveloper@gmail.com, MIT license*

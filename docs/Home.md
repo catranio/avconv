@@ -1,3 +1,3 @@
-Welcome to the IpsCoro wiki!
+Welcome to the Avconv wiki!
 
 ## Table of contents

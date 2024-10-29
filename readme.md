@@ -2,9 +2,9 @@
 
 [project-name]: catranio/avconv
 [project-github-path]: https://github.com/[project-name]
-
-[![linux][project-github-path]]([linux-workflow]/badge.svg)&nbsp;
 [linux-workflow]: [project-github-path]/actions/workflows/linux.yml
+
+[![linux](https://github.com/catranio/avconv/actions/workflows/linux.yml/badge.svg)](https://github.com/catranio/avconv//actions/workflows/linux.yml)&nbsp;
 
 ## Build
 
@@ -21,7 +21,7 @@ $ cmake .. && make -j 4
 * MacOS (with gcc)
 
 ## Documentation
-Documentation can be found in the [wiki]([project-github-path]/wiki) pages.
+Documentation can be found in the [wiki](https://github.com/catranio/avconv/wiki) pages.
 
 ---
 Authors: *Petr Iaskevich*, *Meterellema*\

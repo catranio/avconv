@@ -1,12 +1,22 @@
+#include <format>
 #include <iostream>
 
-#include <fmt/format.h>
-
-#include <some_header.hpp>
+extern "C"
+{
+#include <libavformat/avformat.h>
+}
 
 int main() {
-  constexpr auto kVal = ips::some::ns::SomeType{};
-  std::cout << "Hello, World! Val = " << kVal << '\n';
-  fmt::print("Hello, World! Val = '{}'", kVal);
+  std::cout << std::format("avformat version: {}", LIBAVFORMAT_IDENT) << '\n';
+  auto* ctx = avformat_alloc_context();
+  constexpr auto kFilename = std::string_view{"some.mp3"};
+  if (const auto res = avformat_open_input(&ctx, kFilename.data(), nullptr, nullptr); res != 0) {
+    std::cerr << std::format("filed open file with filename: {}", kFilename) << '\n';
+    avformat_free_context(ctx);
+    return -1;
+  }
+
+  avformat_close_input(&ctx);
+  avformat_free_context(ctx);
   return 0;
 }

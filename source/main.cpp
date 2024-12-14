@@ -10,7 +10,7 @@ int main() {
   std::cin >> folder;
   std::cout << "enter 1 if write or 2 if read" << '\n';
   std::fstream file;
-  char type;
+  char type{};
   std::cin >> type;
   if (type == '1') {
     file.open(folder, std::ios::out | std::ios::in | std::ios::app);
@@ -25,7 +25,7 @@ int main() {
       std::cout << "Enter something" << '\n';
       std::string tmp;
       std::cin >> tmp;
-      file.write(tmp.c_str(), tmp.size());
+      file.write(tmp.c_str(), static_cast<std::uint32_t>(tmp.size()));
       file.close();
     }
   }
